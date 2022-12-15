@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 800px;
+            background-color: beige;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* grid-gap: grid-row-gap grid-column-gap; */
+            grid-gap: 20px;
+
+        }
+
+        .items {
+            /* height: 100%; */
+            font-size: 2em;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+
+
+
+        }
+
+        #item1 {
+            background-color: orangered;
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4; */
+            /* grid-row: 2/3;
+            grid-column: 3/4; */
+            /* grid-area: 2/3/3/4; */
+
+        }
+
+        #item2 {
+            background-color: yellowgreen;
+            grid-column-start: 2;
+            grid-column-end: span 2;
+
+
+        }
+
+        #item3 {
+            background-color: orange;
+            grid-row: 2/span 3;
+            grid-column: 1/span 2;
+
+        }
+
+        #item4 {
+            background-color: rgb(90, 11, 250);
+
+        }
+
+        #item5 {
+            background-color: goldenrod;
+            /* grid-area: 3/2/4/3; */
+        }
+
+        #item6 {
+            background-color: violet;
+            /* grid-area: 1/1/2/2; */
+
+
+        }
+
+        #item7 {
+            background-color: rgba(250, 65, 9, 0.719);
+        }
+
+        #item8 {
+            background-color: rgb(7, 248, 27);
+        }
+
+        #item9 {
+            background-color: rgb(251, 6, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid items spanning:</h1>
+    <div class="container">
+        <div class="items" id="item1">Items-1</div>
+        <div class="items" id="item2">Items-2</div>
+        <div class="items" id="item3">Items-3</div>
+        <div class="items" id="item4">Items-4</div>
+        <div class="items" id="item5">Items-5</div>
+        <div class="items" id="item6">Items-6</div>
+        <div class="items" id="item7">Items-7</div>
+        <div class="items" id="item8">Items-8</div>
+        <div class="items" id="item9">Items-9</div>
+    </div>
+</body>
+
+</html>
