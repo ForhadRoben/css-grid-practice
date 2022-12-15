@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    background-color: beige;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-gap: grid-row-gap grid-column-gap; */
+    grid-gap: 20px;
+}
+
+.items {
+    /* width: 100px; */
+    height: 75px;
+}
+
+#item1 {
+    background-color: orangered;
+}
+
+#item2 {
+    background-color: yellowgreen;
+}
+
+#item3 {
+    background-color: orange;
+}
+
+#item4 {
+    background-color: blanchedalmond;
+}
+
+#item5 {
+    background-color: goldenrod;
+}
+
+#item6 {
+    background-color: violet;
+}
